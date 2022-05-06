@@ -1,0 +1,56 @@
+## **Technical Guidance**
+
+1. You are free to use frameworks, tools, libraries, and services as you see fit. 
+2. Although not required, bonus points for using a recent, stable release of .NET, .NET Core, or cloud services. 
+3. Please use a git repository to track the git history
+
+## **Submission Guidance**
+
+Please submit your code challenge by either:
+
+1. Creating a git repository on GitHub, GitLab, or other code hosting platform and share the link with Superformula via email
+2. Package up the entire git repository and send it over via email
+
+## **Code Challenge**
+
+Please write a REST API in C# which manages Insurance Policies. 
+
+API Functional Requirements:
+
+1. Create an Insurance Policy if the following requirements are met:
+    1. Required Params: Effective Date, First Name, Last Name, Drivers License #, Vehicle details (Year, Model, Manufacturer, Vehicle Name), Address, Expiration Date, Premium (price). Please use your best judgment for reasonable types, formats, and validation for all params.
+    2. Required Logic: 
+        1. Effective Date must be at least 30 days in the future from the creation date of the record (time of entry to database)
+        2. Vehicle Year should be before 1998, otherwise, the Insurance policy should be rejected due to it not meeting “classic vehicle” 
+        3. The Policy address should be verified for a reasonable US-based format
+        4. Before a Policy can be created, a synchronous method should be called which validates State Regulations on whether the policy is legally possible. 
+            1. It should take the entire policy as input
+            2. It should return a boolean and a text description with reason. 
+            3. In the interest of time, please stub this method to have no logic and to return a few different responses randomly. 
+            4. If this method fails, an appropriate HTTP response should be sent to notify the caller. 
+        5. After a policy is considered formally created, it should fire a method that can represent asynchronous work (event bus message, calling accounting Service, calling state regulatory notification service, etc.). 
+            1. This method's work should not block the response to the request and should be able to retry 3 times on failures
+            2. In the interest of time, please stub this method to have no logic and simply have a 50/50 chance of failure
+        6. A unique, auto-generated Policy ID should be generated and stored with the ID
+2.  Retrieve all Insurance Policies by Driver's License #
+    1. Required Params: Driver's License
+    2. Optional Params: 
+        1. A field to allow selecting asc or desc sort by Vehicle year
+        2. Return Expired Policies - boolean that controls whether expired policies are returned. Assumed to be false by default
+    3. You may assume that authentication has already taken place and is verified before this endpoint is called
+    4. Driver's license #s should only be able to look up their own policies 
+3. Retrieve single Insurance policy by Policy ID
+    1. Required Params: Policy ID, Driver's License #
+    2. Required Logic:
+        1. Should only return policy if the Driver's License # matches
+4. Build and run the project locally
+5. Documentation for:
+    1. A Readme file describing ideal onboarding for a new Engineering team that wants to consume this API. What artifacts and descriptions can be provided to help them prepare to consume this API?
+    2. If the State Regulations method is getting very complicated and a separate team is being started to own its requirements and code, what would you recommend to make that transition smoother?
+    3. If you were to hand the code off to a new Engineering team for ownership. How should they think about productionizing it? (Monitoring, Logging, safe handling of PII, extending methods)
+
+## **Bonus Requirements**
+
+1. Please add test cases to cover the logical and assumed requirements you are able to glean from the assessment. Unit, Integration, and 
+    1. It is not necessary to completely write all logic for all possible tests. However, we ask that you write all of the test case descriptions *should*. 
+2. Please describe how this code could be deployed and run in AWS or another cloud service provider. Which AWS services would be used? What infrastructure choices would you make? How would the code need to (if at all) change for this migration to the cloud?

@@ -1,0 +1,12 @@
+E:\Documents\vsprojects\Superformula.Repository\bin\Debug\net5.0\Superformula.Repository.deps.json
+E:\Documents\vsprojects\Superformula.Repository\bin\Debug\net5.0\Superformula.Repository.dll
+E:\Documents\vsprojects\Superformula.Repository\bin\Debug\net5.0\ref\Superformula.Repository.dll
+E:\Documents\vsprojects\Superformula.Repository\bin\Debug\net5.0\Superformula.Repository.pdb
+E:\Documents\vsprojects\Superformula.Repository\obj\Debug\net5.0\Superformula.Repository.csproj.AssemblyReference.cache
+E:\Documents\vsprojects\Superformula.Repository\obj\Debug\net5.0\Superformula.Repository.GeneratedMSBuildEditorConfig.editorconfig
+E:\Documents\vsprojects\Superformula.Repository\obj\Debug\net5.0\Superformula.Repository.AssemblyInfoInputs.cache
+E:\Documents\vsprojects\Superformula.Repository\obj\Debug\net5.0\Superformula.Repository.AssemblyInfo.cs
+E:\Documents\vsprojects\Superformula.Repository\obj\Debug\net5.0\Superformula.Repository.csproj.CoreCompileInputs.cache
+E:\Documents\vsprojects\Superformula.Repository\obj\Debug\net5.0\Superformula.Repository.dll
+E:\Documents\vsprojects\Superformula.Repository\obj\Debug\net5.0\ref\Superformula.Repository.dll
+E:\Documents\vsprojects\Superformula.Repository\obj\Debug\net5.0\Superformula.Repository.pdb

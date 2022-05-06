@@ -1,0 +1,112 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0": {
+      "Superformula.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Superformula.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Superformula.Core.dll": {}
+        }
+      },
+      "Superformula.Persistence/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Superformula.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Superformula.Persistence.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Superformula.Persistence.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Superformula.Core/1.0.0": {
+      "type": "project",
+      "path": "../Superformula.Core/Superformula.Core.csproj",
+      "msbuildProject": "../Superformula.Core/Superformula.Core.csproj"
+    },
+    "Superformula.Persistence/1.0.0": {
+      "type": "project",
+      "path": "../Superformula.Persistence/Superformula.Persistence.csproj",
+      "msbuildProject": "../Superformula.Persistence/Superformula.Persistence.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0": [
+      "Superformula.Core >= 1.0.0",
+      "Superformula.Persistence >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\brian\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "E:\\Documents\\vsprojects\\Superformula.Service\\Superformula.Service.csproj",
+      "projectName": "Superformula.Service",
+      "projectPath": "E:\\Documents\\vsprojects\\Superformula.Service\\Superformula.Service.csproj",
+      "packagesPath": "C:\\Users\\brian\\.nuget\\packages\\",
+      "outputPath": "E:\\Documents\\vsprojects\\Superformula.Service\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\brian\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "projectReferences": {
+            "E:\\Documents\\vsprojects\\Superformula.Core\\Superformula.Core.csproj": {
+              "projectPath": "E:\\Documents\\vsprojects\\Superformula.Core\\Superformula.Core.csproj"
+            },
+            "E:\\Documents\\vsprojects\\Superformula.Persistence\\Superformula.Persistence.csproj": {
+              "projectPath": "E:\\Documents\\vsprojects\\Superformula.Persistence\\Superformula.Persistence.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0": {
+        "targetAlias": "net6.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
