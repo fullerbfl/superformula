@@ -1,3 +1,13 @@
+Written using Visual Studio 2022 .net 6
+The main solution file is  /Superformula/Superformula.sln
+
+Open the solution in Visual Studio and make sure the "Superformula.Api" project is set as the StartUp project.
+Run the project.  This should start a web browser with a Swagger page that will allow you to view the entire API and test it out.
+
+Enjoy.
+
+
+
 Onboarding:
 
 The best way to see how to consume this API is to use the Swagger page.  This will show each endpoint, which verb to use and give sample DTOs.  It also allows testing the API to see how it responds to differing inputs.
